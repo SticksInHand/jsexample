@@ -1,0 +1,11 @@
+body { margin:0; background:#66FF99; }
+ul { padding-left:0; margin:0; }
+li { list-style:none; }
+#nav { height:40px; background:#900; margin-top:50px; }
+#nav ul { width:800px; height:40px; margin:0 auto; }
+#nav li { float:left; height:40px; }
+#nav a { float:left; position:relative; height:40px; overflow:hidden; font-size:14px; color:#e0e03a; text-decoration:none; cursor:pointer; }
+#nav strong { float:left; }
+#nav span { float:left; padding:0 20px; height:40px; line-height:40px; background:#900; clear:both; }
+#nav .active,#nav .current span { background:#600; color:#fff; }
+#nav .current .active { color:#e0e03a; }
