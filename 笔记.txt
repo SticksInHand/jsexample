@@ -14,6 +14,7 @@ previousSibling \ previousElementSibling
 获取指定元素的上一个兄弟节点
 
 parentNode
+
 获取父节点，点击链接隐藏整个li
 
 parentNode&offsetParent区别
