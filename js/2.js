@@ -1,50 +1,35 @@
-/**
- * Created by M.Jin on 14-7-18.
- */
-var factorial = (function f(num){
-    if(num <= 1){
-        return 1;
+function createFunctions(){
+    var result = new Array();
+
+    for(var i = 0; i <10;i++){
+        result[i] = function(num){
+            return num;
+        }(i);
     }
-    else{
-        return num*f(num-1);
-    }
-});
 
-function createComparisonFunction(propertyName){
-
-    return function(object1,object2){
-        var value1 = object1[propertyName];
-        var value2 = object2[propertyName];
-
-        if(value1 < value2){
-            return -1;
-        }else if (value1 > value2){
-            return 1;
-        }else{
-            return 0;
-        }
-    };
-
+    return result;
 }
+var m1 = createFunctions()[0];
+var m2 = createFunctions()[1];
+var m3 = createFunctions()[2];
+var m4 = createFunctions()[3];
+var m5 = createFunctions()[4];
+var m6 = createFunctions()[5];
+var m7 = createFunctions()[6];
+var m8 = createFunctions()[7];
+var m9 = createFunctions()[8];
+var m10 = createFunctions()[9];
 
-function compare(value1,value2){
-    if(value1 < value2){
-        return -1;
-    }else if(value1 > value2){
-        return 1;
-    }else{
-        return 0;
-    }
-}
-
-var result = compare(5,10);
-
-var compare = createComparisonFunction("name");
-var result = compare({name:"saoge"},{name:"greg"});
-
-
-
-
+alert(m1);
+alert(m2);
+alert(m3);
+alert(m4);
+alert(m5);
+alert(m6);
+alert(m7);
+alert(m8);
+alert(m9);
+alert(m10);
 
 
 
