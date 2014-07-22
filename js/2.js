@@ -31,7 +31,27 @@ alert(m8);
 alert(m9);
 alert(m10);
 
+var name = "The Window";
 
+var object = {
+    name:"My Object",
+
+    getNameFunc : function(){
+        return function(){
+            return this.name;
+        };
+    }
+};
+
+alert(object.getNameFunc()());
+
+function assignHandler(){
+    var element = document.getElementsById("someElement");
+
+    element.onclick = function(){
+        alert(element.id);
+    };
+}
 
 
 
